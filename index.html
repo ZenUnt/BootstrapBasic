@@ -9,13 +9,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+      .box-container {
+        width: 100px;
+        height: 100px;
+        background: #ddd;
+        margin-bottom: 5px;
+      }
+    </style>
   </head>
   <body>
-    <h2 class="font-weight-normal display-4">Hello Bootstrap</h2>
-    <div class="text-center bg-primary">BOX</div>
-    <div class="text-right bg-success text-warning">BOX</div>
-    <div class="text-center bg-info font-weight-bold">BOX</div>
-    <div class="text-center bg-dark text-light">BOX</div>
+    <!--
+      Bootstrapのmarginやpaddingの付け方
+      [plm][location]-[size]
+
+      location:
+      - t, b, l, t
+      - x, y
+
+      size:
+      - 0
+      - 1:0.25rem
+      - 2: 0.5rem
+      - 3: 1.0rem
+      - 4: 1.5rem
+      - 5: 3.0rem
+      - auto
+    -->
+    <div class="box-container">
+      <div class="bg-primary w-25 h-50 pt-3">BOX</div>
+    </div>
+
+    <div class="box-container">
+      <div class="bg-success w-75 h-100 my-0 mx-auto">BOX</div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
